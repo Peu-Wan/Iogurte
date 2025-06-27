@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #E2E8FD;
+}
+header{
+  padding: 1.75rem 1.25rem;
+  background-color: #FFFFFF;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+#logo img{
+  height: 32px;
+}
+
+#pag_atual{
+  color: #E95B95;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+#usuario_logado{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+#foto_usuario{
+  width: 40px;
+  height: 40px;
+  border-radius: 80%;
+}
+
+#setinha{
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.icone-menu {
+  display: none; 
+}
+
+
+/* CSS para mobile */
+@media (max-width: 768px) {
+    
+  header {
+        padding: 1rem 0.5rem; 
+    }
+
+    #logo img {
+        height: 30px; 
+    }
+
+    nav {
+        display: none;
+    }
+
+    #usuario_logado img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #usuario_logado p {
+        font-size: 0.9rem; 
+    }
+
+    #setinha {
+        width: 10px;
+        height: 10px;
+    }
+
+    .icone-menu{
+      display: block;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+  .icone-menu img {
+      width: 20px;
+      height: 20px;
+      transform: rotate(90deg);
+      transition: transform 0.3s ease;
+  }    
+
+  #main_nav {
+      display: none; 
+      flex-direction: column;
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      width: 100%;
+      background-color: #FFFFFF;
+      padding: 1rem;
+      z-index: 1000; 
+  }
+  #main_nav ul {
+      flex-direction: column;
+      gap: 0;
+  }
+  #setinha {
+      display: none; 
+  }
+
+  #main_nav ul li {
+        padding: 0.8rem 0; 
+        border-bottom: 1px solid #eee; 
+    }
+
+    #main_nav ul li:last-child {
+        border-bottom: none;
+    }
+
+  #main_nav.active {
+      display: flex;
+  }    
+}
+
+
