@@ -70,6 +70,94 @@ nav ul {
 .icone-menu {
   display: none; 
 }
+.wrapper {
+  display: flex;
+  gap: 1.25rem;
+  max-width: 75rem;
+  margin: 4.75rem auto;
+  padding: 0 1.25rem;
+}
+
+.coluna-esquerda {
+  display: flex;
+  flex: 0 0 17.5rem;
+  flex-shrink: 1;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  text-align: center;
+}
+
+.cartao-info-usuario{
+  background-color: #FFFFFF;
+  padding: 1.5rem 3rem;;
+  gap: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  max-width: 16.5rem;
+  width: 100%;
+  min-height: 18.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-perfil {
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 50%;
+  border: 3px solid #E95B95;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.informacoes-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.informacoes-perfil h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.informacoes-perfil p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+
+.btn-editar-perfil{
+  background-color: #fdefff;
+  padding: 0.625rem 1rem;
+  color: #E95B95;
+  border: none;
+  border-radius: 0.75rem;
+  width: 17.5rem;
+  height: 3rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
 
 
 /* CSS para mobile */
@@ -144,7 +232,35 @@ nav ul {
 
   #main_nav.active {
       display: flex;
-  }    
+  }
+  
+  .wrapper{
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .coluna-esquerda{
+    flex: 1 1 100%;
+    max-width: none;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .cartao-info-usuario {
+    max-width: 100%;
+    width: auto;
+    height:auto;
+    padding: 1.5rem 1.25rem;
+  }
+
+  .btn-editar-perfil{
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    padding: 0.75rem 1rem;
+  }
 }
 
 
