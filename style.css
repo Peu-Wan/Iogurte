@@ -158,6 +158,176 @@ nav ul {
   font-weight: bold;
 }
 
+.coluna-central {
+  flex: 1;
+  min-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.conteudo-principal-perfil{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 32rem;
+  width: 100%;
+  max-height: 54.25rem;
+  height: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  gap: 1.25rem;
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.card-saudacao{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.card-saudacao h2 {
+  font-size: 1.5rem;
+  color:#4B4B4B;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.card-frase-motivacional {
+  background-color: #F2F4F7;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  color: #4B4B4B;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 3.125rem;
+  height: auto;
+  max-width: 34rem;
+  width: auto;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.4;
+  position: relative;
+  }
+  
+.card-frase-motivacional p {
+    margin: 0;
+}
+
+.card-frase-motivacional::before {
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    left: 1.5rem;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid #F2F4F7;
+    transform: translateX(-50%);
+}
+
+.rating-icones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.linha-labels {
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.linha-labels .label {
+    font-size: 0.75rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    min-width: 4rem;
+    text-align: center;
+}
+
+.linha-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.rating-item-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
+    width: 4rem;
+    justify-content: center;
+}
+
+.star-icon {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-image: url('imagens/star.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rating-value {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.icone-confiavel-group,
+.icone-legal-group,
+.icone-sexy-group {
+    display: flex;
+    flex-direction: row;
+    gap: 0.15rem;
+    align-items: center;
+    justify-content: center;
+    height: 1.25rem;
+}
+
+.icone-confiavel,
+.icone-legal,
+.icone-sexy {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icone-confiavel {
+    background-image: url('imagens/smiley.svg');
+}
+
+.icone-legal {
+    background-image: url('imagens/like.svg');
+}
+
+.icone-sexy {
+    background-image: url('imagens/heart.svg');
+}
+
 
 
 /* CSS para mobile */
