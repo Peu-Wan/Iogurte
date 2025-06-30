@@ -328,7 +328,64 @@ nav ul {
     background-image: url('imagens/heart.svg');
 }
 
+.card-detalhes-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    width: 100%;
+}
 
+.card-detalhes-perfil h3 {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: #4b4b4b;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-detalhes-perfil h3 span {
+    font-weight: normal;
+    color: #6c757d;
+    margin-left: 0.3rem;
+}
+
+.card-detalhes-perfil hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 0.5rem 0;
+}
+
+.interesses h3 {
+    margin: 0;
+}
+
+.tag-interesse {
+    display: inline-block;
+    border: 1px solid #E95B95;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    white-space: nowrap;
+}
+
+.ver-todos {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    color: #E95B95;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ver-todos:hover {
+    text-decoration: underline;
+}
 
 /* CSS para mobile */
 @media (max-width: 768px) {
